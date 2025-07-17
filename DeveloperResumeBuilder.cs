@@ -47,6 +47,7 @@ public class DeveloperResumeBuilder : IResumeBuilder
             "1. C#", "2. Java", "3. Python", "4. JavaScript", "5. SQL",
             "6. HTML/CSS", "7. React", "8. Angular", "9. .NET Core", "10. Docker"
         };
+        
         resume.Skills = SkillSelector.SelectSkills(skills, "General Programming");
         
     }

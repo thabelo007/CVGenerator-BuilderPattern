@@ -7,7 +7,7 @@ namespace CVGenerator_BuilderPattern.Helper
             Console.WriteLine("Select skills from the list below:");
             foreach (var skill in skills)
             {
-                Console.WriteLine(skills);
+                Console.WriteLine(skill);
             }
 
             Console.WriteLine("Enter the numbers of the skills you have (Comma-separated, e.g., 1,3,5)");
@@ -28,8 +28,6 @@ namespace CVGenerator_BuilderPattern.Helper
             }
 
             return string.Join(", ", selectedIndices.Select(i => skills[i - 1].Substring(3)));
-
-
 
         }
 
